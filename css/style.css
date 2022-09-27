@@ -1,3 +1,8 @@
+.contacto-acomodar {
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   scroll-padding-top: 110px; /* Es Necesario este padding por el menu fijo, sino la pagina continua debajo del navbar */
   scroll-behavior: smooth;
@@ -9,6 +14,12 @@ body {
 
 .todo {
   margin-top: 100px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(124, 0, 128);
+  font-weight: bold;
 }
 
 /* Media Query solamente para las imagenes de la pag. personalizadas */
@@ -28,17 +39,36 @@ body {
     margin-left: 80vw;
   }
 }
+.centrado {
+  text-align: center;
+}
+
 @font-face {
   font-family: "Break";
   src: url("./font/Break.ttf") format("truetype");
 }
+.btn-color {
+  background-color: rgb(124, 0, 128);
+  color: white;
+}
+
+.btn-color:hover {
+  background-color: greenyellow !important;
+}
+
 .nav-color {
   background: linear-gradient(90deg, rgba(146, 147, 153, 0.597) 0%, rgb(244, 244, 246) 47%, rgba(146, 147, 153, 0.597) 100%);
 }
 
+.nav-link {
+  color: rgb(124, 0, 128) !important;
+  font-weight: bold;
+}
+
 .nav-item a:hover {
-  color: blue !important;
-  font-weight: bolder;
+  color: white !important;
+  background-color: rgb(124, 0, 128);
+  /* font-weight: bolder;*/
 }
 
 .contenido {
@@ -46,6 +76,9 @@ body {
   padding: 30px 50px;
 }
 .contenido p {
+  /*text-align:justify;
+  padding: 30px 50px;*/
+  font-size: 1.2rem;
   text-align: justify;
   padding: 30px 50px;
 }
@@ -71,8 +104,6 @@ body {
 }
 
 .contacto-acomodar {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -80,7 +111,7 @@ body {
   place-self: end;
   position: sticky;
   bottom: 160px;
-  margin-left: 90vw;
+  margin-left: 92vw;
   margin-top: 150vh;
   text-decoration: none;
   padding-top: 10px;
@@ -90,8 +121,8 @@ body {
 .siempre-al-top span {
   font-size: 50px;
 }
-.siempre-al-top span:hover {
-  color: blue;
+.siempre-al-top:hover {
+  color: rgb(124, 0, 128);
 }
 
 /*# sourceMappingURL=style.css.map */
