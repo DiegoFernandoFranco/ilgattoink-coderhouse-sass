@@ -108,18 +108,20 @@ h1 {
 }
 
 .siempre-al-top {
-  place-self: end;
+  display: inline;
+  left: 100%;
   position: sticky;
   bottom: 160px;
-  margin-left: 92vw;
-  margin-top: 150vh;
+  margin-top: 100vh;
   text-decoration: none;
-  padding-top: 10px;
+  padding: 100x 10px;
   color: black;
-  border-radius: 100px;
+  border-radius: 0px;
 }
 .siempre-al-top span {
   font-size: 50px;
+  padding: 0;
+  margin: 0;
 }
 .siempre-al-top:hover {
   color: rgb(124, 0, 128);
